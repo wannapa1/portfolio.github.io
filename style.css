@@ -146,3 +146,59 @@ footer a:hover {
         font-size: 23px;
     }
 }
+
+/* Radial Background */
+body {
+    position: relative;
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            125% 125% at 50% 10%,
+            #ffffff 40%,
+            #a78bfa 100%
+        );
+    background-attachment: fixed;
+    color: #26324b;
+    overflow-x: hidden;
+}
+
+/* ให้เนื้อหาอยู่เหนือพื้นหลัง */
+header,
+section,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* ปรับกล่องเนื้อหาให้เข้ากับพื้นหลัง */
+section {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+
+/* หัวเว็บ */
+header {
+    background: transparent;
+    color: #35245f;
+    padding: 100px 20px;
+}
+
+/* สีหัวข้อ */
+section h2 {
+    color: #7046c7;
+}
+
+/* กล่องผลงาน */
+.project {
+    background: rgba(237, 232, 255, 0.8);
+    border-left: 4px solid #8b5cf6;
+    border-radius: 14px;
+}
+
+/* ส่วนท้าย */
+footer {
+    background: #30204f;
+    color: white;
+}
